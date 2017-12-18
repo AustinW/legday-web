@@ -128,6 +128,10 @@ body {
   color:#8252DA;
 }
 
+section#how-it-works {
+  margin-top:100px;
+}
+
 @media (min-width: 992px) {
   .intro {
     margin-top:25px;
