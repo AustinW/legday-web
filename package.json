@@ -1,0 +1,16 @@
+{
+  "name": "legday-site",
+  "description": "LegDay's website.",
+  "repository": "https://github.com/AustinW/legday-web",
+  "license": "MIT",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "~1.0.1",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-less": "^1.4.1",
+    "grunt-contrib-uglify": "^3.2.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-php": "^1.5.1",
+    "load-grunt-tasks": "^3.5.2"
+  }
+}
