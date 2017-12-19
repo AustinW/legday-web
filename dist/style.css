@@ -123,10 +123,43 @@ body {
 .leg-day-icon svg {
   fill: url('#ldg') !important;
 }
+.gradient-bg {
+  background-image: linear-gradient(135deg, #8252DA, #8252DA, 75%, #c23cef);
+  color: white;
+}
+.pricing .price {
+  color: #8252DA;
+  font-size: 3rem;
+}
+.pricing .denominator {
+  font-size: 1.5rem;
+}
+.quotes {
+  margin-top: 30px;
+}
+section#why-texting,
+section#pricing,
+section#testimonials {
+  font-family: 'gibsonlight';
+}
+section#why-texting strong,
+section#pricing strong,
+section#testimonials strong {
+  font-family: 'gibsonregular';
+}
 @media (min-width: 530px) {
-  section#how-it-works {
-    margin-top: 100px;
+  section {
+    margin-top: 75px;
   }
+  footer {
+    margin-top: 50px;
+    padding: 25px;
+  }
+  section#why-texting {
+    padding: 75px;
+  }
+}
+@media (min-width: 530px) {
   section#how-it-works .how-it-works-grid {
     margin-top: 50px;
   }
