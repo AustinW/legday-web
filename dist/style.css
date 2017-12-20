@@ -137,6 +137,17 @@ body {
 .quotes {
   margin-top: 30px;
 }
+.scroll-to-top {
+  color: #40464d;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: none;
+}
+.scroll-to-top :hover {
+  text-decoration: none;
+  color: #40464d;
+}
 section#why-texting,
 section#pricing,
 section#testimonials {

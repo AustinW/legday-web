@@ -35,7 +35,8 @@ module.exports = function(grunt) {
       main: {
         files: [
           // includes files within path
-          {expand: false, src: ['src/index.html'], dest: 'dist/index.html'}
+          {expand: false, src: ['src/index.html'], dest: 'dist/index.html'},
+          {expand: false, src: ['src/fontawesome-all.min.js'], dest: 'dist/fontawesome-all.min.js'}
         ],
       },
     },

@@ -19,15 +19,15 @@
     <link href="/dist/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#legday-navbar">
 
-    <nav class="navbar navbar-expand-md fixed-top">
+    <nav id="legday-navbar" class="navbar navbar-expand-md fixed-top">
       <a class="navbar-brand" href="#">LegDay</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#legday-menu" aria-controls="legday-menu" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <div id="legday-menu" class="collapse navbar-collapse">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
             <a href="#how-it-works" class="nav-link">How it Works</a>
@@ -56,254 +56,264 @@
 
     <main role="main" class="container-fluid">
       
-      <section id="intro" class="intro row justify-content-md-center">
-        <div class="col col-md-4 offset-md-2">
-          <h1 class="display-5">
-            Front Desk Chatbot for Health Clubs
-          </h1>
-          <div class="lead">
-            Connect your club's existing phone number to the most reliable front desk rep you've ever had.
+        <section id="intro" class="intro row justify-content-md-center">
+          <div class="col col-md-4 offset-md-2">
+            <h1 class="display-5">
+              Front Desk Chatbot for Health Clubs
+            </h1>
+            <div class="lead">
+              Connect your club's existing phone number to the most reliable front desk rep you've ever had.
+            </div>
+            <div class="buttons">
+              <a href="#" class="btn btn-lg btn-demo">Try a demo now</a>
+              <a href="#" class="btn btn-outline btn-outline-purple btn-lg btn-signup">Sign up</a>
+            </div>
           </div>
-          <div class="buttons">
-            <a href="#" class="btn btn-lg btn-demo">Try a demo now</a>
-            <a href="#" class="btn btn-outline btn-outline-purple btn-lg btn-signup">Sign up</a>
+          <div class="col col-md-4 offset-md-1">
+            <img src="img/3-apple-iphone-png-image.png" class="legday-phone" alt="LegDay iPhone">
           </div>
-        </div>
-        <div class="col col-md-4 offset-md-1">
-          <img src="img/3-apple-iphone-png-image.png" class="legday-phone" alt="LegDay iPhone">
-        </div>
-      </section>
-      
-      <section id="how-it-works">
-        <div class="row justify-content-md-center">
-          <div class="col-md-auto">
-            <h5 class="text-center how-it-works">
-              How it Works
-            </h5>
-            <h2 class="text-center headline">
-              Customers text your gym.<br />Our chatbot automatically responds.
-              
-            </h2>
-          </div>
-        </div>
+        </section>
         
-        <div class="row justify-content-md-center how-it-works-grid">
-          <div class="col col-lg-3">
-            <div class="text-center leg-day-icon">
-              <i class="fas fa-mobile fa-7x fa-gradient"></i>
+        <section id="how-it-works">
+          <div class="row justify-content-md-center">
+            <div class="col-md-auto">
+              <h5 class="text-center how-it-works">
+                How it Works
+              </h5>
+              <h2 class="text-center headline">
+                Customers text your gym.<br />Our chatbot automatically responds.
+                
+              </h2>
             </div>
-            <div class="grid-headline">
-              Use Your Existing Number
-            </div>
-            <p class="grid-description">
-              LegDay enables your club's number to send and receive SMS texts.
-            </p>
           </div>
-          <div class="col col-lg-3">
-            <div class="text-center leg-day-icon">
-              <i class="fas fa-plug fa-7x fa-gradient"></i>
+          
+          <div class="row justify-content-md-center how-it-works-grid">
+            <div class="col col-lg-3">
+              <div class="text-center leg-day-icon">
+                <i class="fas fa-mobile fa-7x fa-gradient"></i>
+              </div>
+              <div class="grid-headline">
+                Use Your Existing Number
+              </div>
+              <p class="grid-description">
+                LegDay enables your club's number to send and receive SMS texts.
+              </p>
             </div>
-            <div class="grid-headline">
-              Easy Integration
+            <div class="col col-lg-3">
+              <div class="text-center leg-day-icon">
+                <i class="fas fa-plug fa-7x fa-gradient"></i>
+              </div>
+              <div class="grid-headline">
+                Easy Integration
+              </div>
+              <p class="grid-description">
+                We plug into the most popular member management systems.
+              </p>
             </div>
-            <p class="grid-description">
-              We plug into the most popular member management systems.
-            </p>
+            <div class="col col-lg-3">
+              <div class="text-center leg-day-icon">
+                <i class="fas fa-desktop fa-7x fa-gradient"></i>
+              </div>
+              <div class="grid-headline">
+                Drive Engagement
+              </div>
+              <p class="grid-description">
+                Communicate with your members through a branded web console.
+              </p>
+            </div>
           </div>
-          <div class="col col-lg-3">
-            <div class="text-center leg-day-icon">
-              <i class="fas fa-desktop fa-7x fa-gradient"></i>
+          
+          <div class="row justify-content-md-center how-it-works-grid">
+            <div class="col col-lg-3">
+              <div class="text-center leg-day-icon">
+                <i class="fas fa-calendar fa-7x fa-gradient"></i>
+              </div>
+              <div class="grid-headline">
+                Create Awareness
+              </div>
+              <p class="grid-description">
+                Members can find and book classes, and sign up for personalized alerts.
+              </p>
             </div>
-            <div class="grid-headline">
-              Drive Engagement
+            <div class="col col-lg-3">
+              <div class="text-center leg-day-icon">
+                <i class="fas fa-clock fa-7x fa-gradient"></i>
+              </div>
+              <div class="grid-headline">
+                Free Up Time
+              </div>
+              <p class="grid-description">
+                Automate the most common questions so you can do more.
+              </p>
             </div>
-            <p class="grid-description">
-              Communicate with your members through a branded web console.
-            </p>
+            <div class="col col-lg-3">
+              <div class="text-center leg-day-icon">
+                <i class="fas fa-chart-line fa-7x fa-gradient"></i>
+              </div>
+              <div class="grid-headline">
+                Accelerate Revenue
+              </div>
+              <p class="grid-description">
+                Get new and existing customers in the door and spending more.
+              </p>
+            </div>
           </div>
-        </div>
+        </section>
         
-        <div class="row justify-content-md-center how-it-works-grid">
-          <div class="col col-lg-3">
-            <div class="text-center leg-day-icon">
-              <i class="fas fa-calendar fa-7x fa-gradient"></i>
+        <section id="why-texting" class="gradient-bg">
+          <div class="row">
+            <div class="col col-md-12 text-center">
+              <h5>
+                Why Texting?
+              </h5>
+              <h2 class="display-4">
+                Texting is <strong>#1</strong> for customer service.
+              </h2>
+              <p>
+                Preferred over mobile apps, face to face, and over the phone communication.<br />
+                Customers want to text your gym. Give them what they want.
+              </p>
             </div>
-            <div class="grid-headline">
-              Create Awareness
-            </div>
-            <p class="grid-description">
-              Members can find and book classes, and sign up for personalized alerts.
-            </p>
           </div>
-          <div class="col col-lg-3">
-            <div class="text-center leg-day-icon">
-              <i class="fas fa-clock fa-7x fa-gradient"></i>
-            </div>
-            <div class="grid-headline">
-              Free Up Time
-            </div>
-            <p class="grid-description">
-              Automate the most common questions so you can do more.
-            </p>
-          </div>
-          <div class="col col-lg-3">
-            <div class="text-center leg-day-icon">
-              <i class="fas fa-chart-line fa-7x fa-gradient"></i>
-            </div>
-            <div class="grid-headline">
-              Accelerate Revenue
-            </div>
-            <p class="grid-description">
-              Get new and existing customers in the door and spending more.
-            </p>
-          </div>
-        </div>
-      </section>
-      
-      <section id="why-texting" class="gradient-bg">
-        <div class="row">
-          <div class="col col-md-12 text-center">
-            <h5>
-              Why Texting?
-            </h5>
-            <h2 class="display-4">
-              Texting is <strong>#1</strong> for customer service.
-            </h2>
-            <p>
-              Preferred over mobile apps, face to face, and over the phone communication.<br />
-              Customers want to text your gym. Give them what they want.
-            </p>
-          </div>
-        </div>
-      </section>
-      
-      <section id="pricing">
-        <div class="row">
-          <div class="col col-md-12 text-center">
-            <h5>Simple Pricing</h5>
-            <h2 class="display-4">No contracts or upfront fees.</h2>
-            <div class="pricing">
-              <span class="price">$49</span>
-              <span class="denominator">/mo</span>
-            </div>
-            
-            <ul class="list-unstyled">
-              <li>Month to month</li>
-              <li>Unlimited text messages</li>
-              <li>Dedicated account manager</li>
-            </ul>
-            
-            <a href="#" class="btn btn-outline btn-outline-purple btn-lg btn-signup">Sign up</a>
-          </div>
-        </div>
-      </section>
-      
-      <section id="testimonials">
-        <div class="row">
-          <div class="col col-md-12 text-center">
-            <h5>Testimonials</h5>
-            
-            <h2 class="display-4">
-              We're transforming the gym experience.
-            </h2>
-            
-            <div class="row">
-              <div class="col-md-6 offset-md-3 quotes">
-                <blockquote class="blockquote text-center">
-                  <p class="mb-0">"Just when you think FWF Gym can't get any cooler... LegDay's chatbot takes the experience to the next level! LOVE IT!"</p>
-                  <footer class="blockquote-footer">Kim Wyatt, Member</footer>
-                </blockquote>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 offset-md-3 quotes">
-                <blockquote class="blockquote text-center">
-                  <p class="mb-0">"I absolutely love LegDay's chatbot and find that it is such a unique and exclusive feature for our facility!"</p>
-                  <footer class="blockquote-footer">Megan Qualls, Service Staff</footer>
-                </blockquote>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 offset-md-3 quotes">
-                <blockquote class="blockquote text-center">
-                  <p class="mb-0">"There's really no negative feedback, everything was succinct and simple."</p>
-                  <footer class="blockquote-footer">Steven Aguilera, Member</footer>
-                </blockquote>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </section>
-      
-      <section id="contact-us">
-        <div class="row">
-          <div class="col col-md-12 text-center">
-            <h5>Contact Us</h5>
-            <h2 class="display-4">Have some more questions?</h2>
-          </div>
-        </div>
+        </section>
         
-        <div class="row">
-          <div class="col col-md-4 offset-md-4">
-            <form action="#">
-              
-              <div class="form-group">
-                <label class="col-form-label" for="name">Name</label>
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-user"></i></span>
-                  <input type="text" class="form-control" aria-label="Name" name="name">
-                </div>
+        <section id="pricing">
+          <div class="row">
+            <div class="col col-md-12 text-center">
+              <h5>Simple Pricing</h5>
+              <h2 class="display-4">No contracts or upfront fees.</h2>
+              <div class="pricing">
+                <span class="price">$49</span>
+                <span class="denominator">/mo</span>
               </div>
               
-              <div class="form-group">
-                <label class="col-form-label" for="email">Email</label>
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-                  <input type="email" class="form-control" aria-label="Email" name="email">
-                </div>
-              </div>
+              <ul class="list-unstyled">
+                <li>Month to month</li>
+                <li>Unlimited text messages</li>
+                <li>Dedicated account manager</li>
+              </ul>
               
-              <div class="form-group">
-                <label class="col-form-label" for="phone">Phone</label>
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-phone"></i></span>
-                  <input type="tel" class="form-control" aria-label="Phone" name="phone">
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label class="col-form-label" for="club_name">Club Name</label>
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-building"></i></span>
-                  <input type="text" class="form-control" aria-label="Club Name" name="club_name">
-                </div>
-              </div>
-              
-              <div class="form-group">
-                <label class="col-form-label" for="name">Number of Clubs</label>
-                <div class="input-group">
-                  <span class="input-group-addon">#</span>
-                  <input type="text" class="form-control" aria-label="Number of Clubs" name="number_of_clubs">
-                </div>
-              </div>
-              
-              <div class="text-center">
-                <button type="submit" class="btn btn-outline btn-outline-purple btn-lg btn-signup">Sign up</button>
-              </div>
-            </form>
+              <a href="#" class="btn btn-outline btn-outline-purple btn-lg btn-signup">Sign up</a>
+            </div>
           </div>
-        </div>
-      </section>
-      
-      <footer id="footer" class="gradient-bg">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <i class="fa fa-user fa-7x"></i>
+        </section>
+        
+        <section id="testimonials">
+          <div class="row">
+            <div class="col col-md-12 text-center">
+              <h5>Testimonials</h5>
+              
+              <h2 class="display-4">
+                We're transforming the gym experience.
+              </h2>
+              
+              <div class="row">
+                <div class="col-md-6 offset-md-3 quotes">
+                  <blockquote class="blockquote text-center">
+                    <p class="mb-0">"Just when you think FWF Gym can't get any cooler... LegDay's chatbot takes the experience to the next level! LOVE IT!"</p>
+                    <footer class="blockquote-footer">Kim Wyatt, Member</footer>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 offset-md-3 quotes">
+                  <blockquote class="blockquote text-center">
+                    <p class="mb-0">"I absolutely love LegDay's chatbot and find that it is such a unique and exclusive feature for our facility!"</p>
+                    <footer class="blockquote-footer">Megan Qualls, Service Staff</footer>
+                  </blockquote>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 offset-md-3 quotes">
+                  <blockquote class="blockquote text-center">
+                    <p class="mb-0">"There's really no negative feedback, everything was succinct and simple."</p>
+                    <footer class="blockquote-footer">Steven Aguilera, Member</footer>
+                  </blockquote>
+                </div>
+              </div>
+              
+            </div>
           </div>
-        </div>
-      </footer>
-      
+        </section>
+        
+        <section id="contact-us">
+          <div class="row">
+            <div class="col col-md-12 text-center">
+              <h5>Contact Us</h5>
+              <h2 class="display-4">Have some more questions?</h2>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col col-md-4 offset-md-4">
+              <form action="#">
+                
+                <div class="form-group">
+                  <label class="col-form-label" for="name">Name</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control" aria-label="Name" name="name">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="col-form-label" for="email">Email</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input type="email" class="form-control" aria-label="Email" name="email">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="col-form-label" for="phone">Phone</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                    <input type="tel" class="form-control" aria-label="Phone" name="phone">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="col-form-label" for="club_name">Club Name</label>
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-building"></i></span>
+                    <input type="text" class="form-control" aria-label="Club Name" name="club_name">
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label class="col-form-label" for="name">Number of Clubs</label>
+                  <div class="input-group">
+                    <span class="input-group-addon">#</span>
+                    <input type="text" class="form-control" aria-label="Number of Clubs" name="number_of_clubs">
+                  </div>
+                </div>
+                
+                <div class="text-center">
+                  <button type="submit" class="btn btn-outline btn-outline-purple btn-lg btn-signup">Sign up</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        
+        <footer id="footer" class="gradient-bg">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <i class="fa fa-user fa-7x"></i>
+            </div>
+          </div>
+        </footer>
+        
+        <a href="#" class="scroll-to-top">
+          <!-- <span class="fa-3x">
+            <span class="fa-layers fa-fw">
+              <i class="fas fa-circle" style="color:#40464d"></i>
+              <i class="fas fa-inverse fa-arrow-up" data-fa-transform="shrink-7"></i>
+            </span>
+          </span> -->
+          <i class="fas fa-arrow-circle-up fa-3x"></i>
+        </a>
+        
     </main><!-- /.container -->
     
     <svg width="100" height="100">
@@ -320,9 +330,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- <script src="/dist/fontawesome-all.min.js"></script> -->
     <script src="/dist/main.min.js"></script>
     
   </body>
