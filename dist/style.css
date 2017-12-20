@@ -77,6 +77,12 @@ body {
 .navbar-nav .active {
   color: #8252DA;
 }
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
 .btn-outline-purple {
   color: #8252DA;
   background-image: none;
@@ -87,7 +93,7 @@ body {
   max-width: 300px;
   margin: 0 auto;
 }
-.buttons .btn-demo {
+.btn-demo {
   background-image: linear-gradient(to bottom right, #8252DA, #FF40FF);
   border: 0;
   border-color: #8252DA;
@@ -157,6 +163,9 @@ section#why-texting strong,
 section#pricing strong,
 section#testimonials strong {
   font-family: 'gibsonregular';
+}
+footer {
+  padding: 15px;
 }
 @media (min-width: 530px) {
   section {
