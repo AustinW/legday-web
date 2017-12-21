@@ -88,13 +88,13 @@ body {
     /* the rest of your styling */
 }
 
-.navbar-brand {
+.navbar-light .navbar-brand {
   text-transform: uppercase;
   font-weight: bold;
   color: #8252DA;
 }
 
-.navbar-brand:hover {
+.navbar-light .navbar-brand:hover {
   color: #8252DA;
 }
 
@@ -120,6 +120,21 @@ body {
   border-color: #8252DA;
 }
 
+.btn-outline-purple:not([disabled]):not(.disabled).active,
+.btn-outline-purple:not([disabled]):not(.disabled):active,
+.show>.btn-outline-purple.dropdown-toggle {
+  color: #fff;
+  background-color: #8252DA;
+  border-color: #8252DA;
+  box-shadow: 0 0 0 .2rem rgba(130, 82, 218, .5)
+}
+
+.btn-outline-purple:hover {
+  color: #fff;
+  background-color: #8252DA;
+  border-color: #8252DA;
+}
+
 .legday-phone {
   max-width:300px;
   margin: 0 auto;
@@ -135,10 +150,6 @@ body {
 .btn-demo:active, .btn-demo:hover {
   background-image: linear-gradient(to bottom right, #8252DA, #FF40FF) !important;
   color: white;
-}
-
-.btn-signup:active, .btn-signup:hover {
-  color:#8252DA;
 }
 
 .how-it-works {
@@ -203,6 +214,16 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  section#intro {
+    text-align: center;
+  }
+  
+  .intro-text {
+    margin-bottom: 30px;
+  }
+}
+
 section#why-texting, section#pricing, section#testimonials {
   font-family: 'gibsonlight';
   
@@ -214,6 +235,12 @@ section#why-texting, section#pricing, section#testimonials {
 
 footer {
   padding: 15px;
+}
+
+@media (min-width: 992px) {
+  .grid-separator {
+    width:100% !important;
+  }
 }
 
 @media (min-width: 530px) {
@@ -242,6 +269,24 @@ section#how-it-works {
     }
   }
   
+}
+
+@media (max-width: 575px) {
+  section h2, section h5 {
+    margin: 50px 10px;
+  }
+  
+  section p {
+    padding: 0 30px 10px 30px;
+  }
+  
+  form {
+    margin: 0 30px;
+  }
+  
+  footer {
+    margin-top: 30px;
+  }
 }
 
 @media (min-width: 992px) {
